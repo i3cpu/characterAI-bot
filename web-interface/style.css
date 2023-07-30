@@ -1,0 +1,70 @@
+body {
+    /* Layout Properties */
+    display: flex;
+    justify-content: center;
+
+    /* UI Properties */
+    background:var(--tg-theme-bg-color, #F5F5F5);
+    color-scheme: var(--tg-color-scheme);
+    opacity: 1;
+    box-sizing: border-box;
+
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.character{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.character img:active{
+    cursor: pointer;
+    width: 255px;
+    height: 255px;
+
+}
+.character img{
+    transition: all 0.3s ease;
+    /* Layout Properties */
+    width: 250px;
+    height: 250px;
+    /* UI Properties */
+    box-shadow: 0px 15px 15px #00000029;
+    border: 3px solid #27A7E7;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.character-name{
+    /* Layout Properties */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 374px;
+    height: 48px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 40px/48px SF Pro;
+    letter-spacing: 0px;
+    color: var(--tg-theme-text-color, #27A7E7);
+    opacity: 1;
+}
+
+.character-role{
+    /* Layout Properties */
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    height: 48px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 40px/48px SF Pro;
+    letter-spacing: 0px;
+    color: var(--tg-theme-text-color, #27A7E7);
+    opacity: 1;
+}

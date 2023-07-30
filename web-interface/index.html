@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+
+</head>
+
+
+<body>
+    <div id="main">
+      <div class="character" @click="onImageClick('rick')">
+        <img src="1.png" alt="rick-img">
+        <div class="character-name">Рик Санчез</div>
+        <div class="character-role">Персонаж</div>
+      </div>
+
+      <div class="character" @click="onImageClick('harry')">
+        <img src="2.png" alt="harry-img">
+        <div class="character-name">Гарри Поттер</div>
+        <div class="character-role">Персонаж</div>
+      </div>
+
+      <div v-if="selectedImage">
+        Вы выбрали: {{selectedImage}}
+      </div>
+    </div>
+
+  <script src='main.js'></script>
+
+</body>
+</html>
